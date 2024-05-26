@@ -1,4 +1,3 @@
-/* Estilos adicionales */
 body {
   font-family: Arial, sans-serif;
 }
@@ -30,14 +29,6 @@ body {
   margin: 5px 0;
 }
 
-.navbar-collapse {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.navbar-collapse.show {
-  display: block;
-}
 
 .navbar-nav {
   display: flex;
@@ -139,11 +130,6 @@ footer {
 @media (max-width: 768px) {
   .navbar-toggler {
     display: block;
-  }
-
-  .navbar-collapse {
-    display: none;
-    flex-direction: column;
   }
 
   .movie-container {
