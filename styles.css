@@ -140,3 +140,9 @@ footer {
     min-width: 100%;
   }
 }
+
+@media (max-width: 480px) {
+  .nav-item {
+    margin-left: -1rem;
+  }
+}
