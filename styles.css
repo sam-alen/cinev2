@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;   /* Tarea */
+}
+
 body {
   font-family: Arial, sans-serif;
 }
@@ -5,7 +9,7 @@ body {
 .navbar {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: center;  /* Tarea */ 
   padding: 1rem;
   background-color: #343a40;
 }
@@ -38,6 +42,7 @@ body {
 
 .nav-item {
   margin-left: 1rem;
+  flex-basis: 100px; /* Tarea */ 
 }
 
 .nav-link {
@@ -76,15 +81,23 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
+  align-content: space-between; /* Extra */ 
+}
+
+.movie-card:hover, .movie-card:focus {
+  outline: 10px solid #007bff; /* Extra */ 
 }
 
 .movie-card {
   flex: 1;
   min-width: 300px;
+  flex-shrink: 0; /* Extra */ 
+  flex-basis: 300;
   border: 1px solid #ddd;
   border-radius: 5px;
-  overflow: hidden;
+  overflow: hidden; /* Extra */ 
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative; /* Extra */ 
 }
 
 .movie-card img {
@@ -125,6 +138,7 @@ footer {
   background-color: #343a40;
   color: #fff;
   padding: 1rem 0;
+  opacity: 0.9; /* Extra */ 
 }
 
 @media (max-width: 768px) {
